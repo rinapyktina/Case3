@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+# -*- encoding: utf-8
+if __name__ == "__main__":
+    S = int(input())
+    p500 = 0
+    p100 = 0
+    p10 = 0
+    p5 = 0
+    p2 = 0
+    p1 = 0
+    while S > 0:
+        if S >= 500:
+            p500 += 1
+            S -= 500
+        elif S >= 100:
+            p100 += 1
+            S -= 100
+        elif S >= 10:
+            p10 += 1
+            S -= 10
+        elif S >= 5:
+            p5 += 1
+            S -= 5
+        elif S >= 2:
+            p2 += 1
+            S -= 2
+        elif S >= 1:
+            p1 += 1
+            S -= 1
+
+    print("500 -", p500, "шт.")
+    print("100 -", p100,  "шт.")
+    print("10 -", p10, "шт.")
+    print("5 -", p5, "шт.")
+    print("2 -", p2, "шт.")
+    print("1 -", p1, "шт.")
+
